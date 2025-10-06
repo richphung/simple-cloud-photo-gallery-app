@@ -530,6 +530,9 @@ export default {
   position: relative;
   z-index: 10;
   margin-bottom: 2rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .search-header {

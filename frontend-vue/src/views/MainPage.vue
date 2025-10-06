@@ -336,7 +336,7 @@ export default {
 
 <style scoped>
 .main-page {
-  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
   flex: 1;
@@ -413,13 +413,15 @@ export default {
 .search-section,
 .gallery-section {
   margin-bottom: 1.5rem;
-  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 .gallery-section {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Mobile responsiveness */

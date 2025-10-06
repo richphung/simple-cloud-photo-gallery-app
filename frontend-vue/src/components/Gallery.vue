@@ -110,9 +110,11 @@
 
     <!-- Empty State -->
     <div v-if="images.length === 0 && !loading" class="gallery-empty">
-      <div class="empty-icon">📷</div>
-      <h3>No images found</h3>
-      <p>Try adjusting your search criteria or upload some images.</p>
+      <div class="empty-content">
+        <div class="empty-icon">📷</div>
+        <h3>No images found</h3>
+        <p>Try adjusting your search criteria or upload some images.</p>
+      </div>
     </div>
   </div>
 </template>
@@ -227,6 +229,9 @@ export default {
   padding: 1.5rem;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .gallery-header {
@@ -280,16 +285,22 @@ export default {
   display: grid;
   gap: 1.5rem;
   width: 100%;
+  min-width: 100%;
+  min-height: 200px;
 }
 
 .gallery-content.grid {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  width: 100%;
+  min-width: 100%;
 }
 
 .gallery-content.list {
   grid-template-columns: 1fr;
   max-width: 800px;
   margin: 0 auto;
+  width: 100%;
+  min-width: 100%;
 }
 
 .gallery-item {
@@ -439,6 +450,14 @@ export default {
   text-align: center;
   padding: 3rem;
   color: white;
+  width: 100%;
+  min-width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .error-content h3 {
@@ -483,6 +502,13 @@ export default {
 .empty-icon {
   font-size: 4rem;
   margin-bottom: 1rem;
+}
+
+.empty-content {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .gallery-empty h3 {
