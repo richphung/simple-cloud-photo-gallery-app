@@ -35,25 +35,13 @@ Perfect for photographers, content creators, or anyone managing large image coll
 ![Edit Metadata](images/edit-image-metadata.png)
 *Fine-tune AI results or add custom metadata when needed*
 
-## 🛠️ **Technical Excellence**
+## 🛠️ **Technical Stack**
 
-### **Frontend Architecture**
-- **Vue.js 3** with Composition API for reactive, maintainable code
-- **Vite** for lightning-fast development and builds
-- **Modern UI/UX** with responsive design and smooth animations
-- **Real-time updates** with reactive data binding
-
-### **Backend Engineering**
-- **FastAPI** with automatic OpenAPI documentation
-- **SQLAlchemy ORM** for robust database management
-- **Intelligent image processing** with automatic compression
-- **RESTful API design** with comprehensive error handling
-
-### **AI Integration**
-- **Claude 3.5 Sonnet Vision** via OpenRouter API
-- **Smart image analysis** with confidence scoring
-- **Dynamic category management** - AI creates new categories as needed
-- **Fallback handling** - graceful degradation when AI analysis fails
+- **Frontend**: Vue.js 3 with Vite
+- **Backend**: FastAPI with SQLAlchemy ORM
+- **Database**: SQLite with full-text search
+- **AI**: Claude 3.5 Sonnet Vision via OpenRouter API
+- **Image Processing**: Automatic compression and optimization
 
 ## 🎯 **Key Capabilities**
 
@@ -176,13 +164,12 @@ Perfect for photographers, content creators, or anyone managing large image coll
 - **Memory usage**: Optimized for low-resource environments
 - **Database**: SQLite with full-text search indexing
 
-## 🏆 **Why This Project Stands Out**
+## 🏆 **Key Features**
 
-1. **Real AI Integration** - Not just mock data, actual AI analysis
-2. **Production Ready** - Error handling, logging, monitoring
-3. **Modern Stack** - Latest technologies and best practices
-4. **Scalable Architecture** - Easy to extend and maintain
-5. **User-Centric Design** - Intuitive interface with powerful features
+- **Real AI Integration** - Actual AI analysis, not mock data
+- **Production Ready** - Error handling and monitoring
+- **Modern Stack** - Latest technologies and best practices
+- **User-Friendly** - Intuitive interface with powerful features
 
 ## 📄 **License**
 

@@ -192,3 +192,4 @@ class MetadataService:
         return ", ".join(summary_parts) if summary_parts else "Image uploaded"
 
 
+
